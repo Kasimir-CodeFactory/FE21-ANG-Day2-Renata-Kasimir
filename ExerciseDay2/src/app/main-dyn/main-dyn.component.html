@@ -1,1 +1,24 @@
-<p>main-dyn works!</p>
+<div class="row col-12 mb-5">
+    <form [formGroup]="inputCars">
+        <input type="text" formControlName="picture" placeholder="Picture URL">
+        <br><br>
+        <input type="text" formControlName="name" placeholder="Model">
+        <br><br>
+        <input type="text" formControlName="price" placeholder="Price">
+        <br><br>
+        <input type="submit" value="Create File" (click)="submitPush()">
+    </form>
+</div>
+
+<div class="row col-12">
+    <div class="col-4 mb-3" *ngFor="let oneCar of cars">
+        <div class="card">
+            <img class="card-image-top" src="{{oneCar.picture}}" alt="">
+            <div class="card-body">
+                <p class="card-text">Model: {{oneCar.name}}</p>
+                <p class="card-text">Price: € {{oneCar.price}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
