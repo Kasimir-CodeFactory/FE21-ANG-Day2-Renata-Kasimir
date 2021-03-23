@@ -10,6 +10,8 @@ import { MainDynComponent } from './main-dyn/main-dyn.component';
 import { ContactDynComponent } from './contact-dyn/contact-dyn.component';
 import { FooterFixComponent } from './footer-fix/footer-fix.component';
 
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,8 @@ import { FooterFixComponent } from './footer-fix/footer-fix.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

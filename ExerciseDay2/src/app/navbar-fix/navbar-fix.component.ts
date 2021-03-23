@@ -10,7 +10,7 @@ export class NavbarFixComponent implements OnInit {
   
   counter: number = 0;
   countPlus() {
-      let a = this.counter + 10;
+      let a = this.counter +10;
       this.counter = a;
   }
 

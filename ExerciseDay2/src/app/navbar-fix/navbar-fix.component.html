@@ -1,8 +1,11 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid coloring">
+
         <a class="navbar-brand" routerLink="">Main</a>
         <a class="navbar-brand" routerLink="contact">Contact</a>
+
         <input type="button" value="Donate €10" (click)="countPlus()">
+        
         <ng-template [ngIf]="counter >= 200" [ngIfElse]="none">
                 <p>Your status is <b>VIP</b></p>
         </ng-template>

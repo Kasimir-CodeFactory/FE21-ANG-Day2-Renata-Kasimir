@@ -1,1 +1,15 @@
-<p>contact-dyn works!</p>
+
+
+<form [formGroup]="inputs">
+    <input type="text" formControlName="firstName" placeholder="Your First Name">
+    <br>
+    <input type="text" formControlName="lastName" placeholder="Your Last Name">
+    <br>
+    <input type="number" formControlName="age" placeholder="Your Age">
+    <br>
+    <input type="email" formControlName="email" placeholder="Your E-mail Address">
+    <br>
+    <input type="submit" value="Submit" (click)="saveData()">
+</form>
+
+<!-- There also should be a Contact us page with a form with as many inputs as you consider pertinent. Do not forget to add the validators to them!! -->
